@@ -12,6 +12,8 @@
 
     <dependencies>
 
+
+
         <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -24,6 +26,8 @@
             <artifactId>junit-jupiter-params</artifactId>
             <version>5.1.0-RC1</version>
             <scope>test</scope>
+
+
         </dependency>
         <dependency>
             <groupId>com.intellij</groupId>
@@ -46,6 +50,7 @@
 
     <build>
         <plugins>
+
 
             <plugin>
                 <groupId>org.jacoco</groupId>
@@ -80,11 +85,13 @@
                         </configuration>
                     </execution>
                 </executions>
+
                 <configuration>
                     <systemPropertyVariables>
-                        <jacoco-agent.destfile>target/jacoco.exec</jacoco-agent.destfile>
+                       <jacoco-agent.destfile>target/jacoco.exec</jacoco-agent.destfile>
                     </systemPropertyVariables>
                 </configuration>
+
             </plugin>
 
             <plugin>
