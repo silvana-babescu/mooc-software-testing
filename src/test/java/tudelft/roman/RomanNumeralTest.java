@@ -33,4 +33,12 @@ public class RomanNumeralTest {
         int result = roman.convert("XLIV");
         Assertions.assertEquals(44, result);
     }
+
+    @Test
+    public void numberWithSameDigits() {
+        RomanNumeral roman = new RomanNumeral();
+        int result = roman.convert("XX");
+        Assertions.assertEquals(20, result);
+    }
+
 }

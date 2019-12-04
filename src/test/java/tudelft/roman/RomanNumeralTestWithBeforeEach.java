@@ -36,4 +36,10 @@ public class RomanNumeralTestWithBeforeEach {
         int result = roman.convert("XLIV");
         Assertions.assertEquals(44, result);
     }
+    @Test
+    public void numberWithSameDigits() {
+
+        int result = roman.convert("XX");
+        Assertions.assertEquals(20, result);
+    }
 }
