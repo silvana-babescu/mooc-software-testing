@@ -15,7 +15,8 @@ public class ChocolateBagsTest2 {
             "0,3,17,-1", "1,3,17,-1", "2,3,17,2", "3,3,17,2",
             "0,3,12,-1", "1,3,12,-1", "2,3,12,2", "3,3,12,2",
             // Only small bars.
-            "4,2,3,3", "3,2,3,3", "2,2,3,-1", "1,2,3,-1"
+            "4,2,3,3", "3,2,3,3", "2,2,3,-1", "1,2,3,-1",
+            "0,0,3,-1"
     })
     public void testAlgorithm(int small, int big, int total, int expectedResult) {
         int result = new ChocolateBags().calculate(small, big, total);

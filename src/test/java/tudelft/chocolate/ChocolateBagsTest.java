@@ -1,6 +1,7 @@
 package tudelft.chocolate;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
@@ -35,4 +36,10 @@ public class ChocolateBagsTest {
         int result = new ChocolateBags().calculate(small, big, total);
         Assertions.assertEquals(expectedResult, result);
     }
+    @Test
+    public void noSmallORBigBars() {
+        int result = new ChocolateBags().calculate(0, 0, 3);
+        Assertions.assertEquals(-1, result);
+    }
+
 }
