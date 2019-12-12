@@ -4,8 +4,6 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
-
-
 import java.util.Arrays;
 import java.util.List;
 
@@ -25,6 +23,7 @@ public class DiscountApplierTest {
 
         DiscountApplier discApply = new DiscountApplier(dao);
         List<Product> result = discApply.setNewPrices();
+
         for (Product p : result)
         {
             if(p.getCategory().equals("BUSINESS")) businessPrice1 = p.getPrice();

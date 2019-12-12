@@ -9,7 +9,7 @@ public class DiscountApplier {
     public DiscountApplier (ProductDao dao) {
         this.dao = dao;
     }
-
+//The bug was that the discounts were switched for teh categories
     public List<Product> setNewPrices() {
         List<Product>  allProducts = dao.all();
         for(Product product : allProducts) {

@@ -14,7 +14,7 @@ public class CountLetters {
 
             last = str.charAt(i);
         }
-
+//the bug was that it was char 'x' instead of char 'r'
         if(last == 'r' || last == 's')
             words++;
 
